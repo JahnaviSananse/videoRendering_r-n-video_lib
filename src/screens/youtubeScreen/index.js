@@ -240,7 +240,10 @@ const youtubeScreen = () => {
               />
 
               <View>
-                <View style={{flexDirection: 'row'}}>
+                <View
+                  style={{
+                    flexDirection: 'row',
+                  }}>
                   <Image
                     style={styles.tinyIconSel}
                     source={{
@@ -260,12 +263,12 @@ const youtubeScreen = () => {
                 <View
                   style={{
                     width: '90%',
-                    height: 30,
-                    backgroundColor: 'white',
+                    height: 50,
+                    // backgroundColor: 'pink',
                     flexDirection: 'row',
                     justifyContent: 'space-between',
                     alignSelf: 'center',
-                    top: '60%',
+                    top: '65%',
                   }}>
                   <Image
                     style={{width: 25, height: 25, top: 10}}
@@ -275,10 +278,12 @@ const youtubeScreen = () => {
                     style={{width: 25, height: 25, top: 10}}
                     source={IMAGE.DISLIKE}
                   />
-                  <Image
-                    style={{width: 25, height: 25, top: 10}}
-                    source={IMAGE.SHARE}
-                  />
+                  <TouchableOpacity>
+                    <Image
+                      style={{width: 25, height: 25, top: 10}}
+                      source={IMAGE.SHARE}
+                    />
+                  </TouchableOpacity>
                   <Image
                     style={{width: 25, height: 25, top: 10}}
                     source={IMAGE.DOWNLOAD}
@@ -322,10 +327,7 @@ const youtubeScreen = () => {
                         uri: list ? list.icon : '',
                       }}
                     />
-                    <View style={{flexDirection: 'column'}}>
-                      {/* <Text style={styles.titlebet}> {list.title} </Text>
-                      <Text style={styles.introbet}> {list.intro} </Text> */}
-                    </View>
+
                     <View>
                       <Text
                         style={{

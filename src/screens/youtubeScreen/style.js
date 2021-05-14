@@ -95,7 +95,7 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
   },
   backgroundVideo: {
-    height: 190,
+    height: 0,
     position: 'absolute',
     top: 0,
     left: 0,
